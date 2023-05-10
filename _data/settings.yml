@@ -1,0 +1,12 @@
+basic_settings:
+  site_title: Michael Levy
+  favicon_image:
+
+# Setup your navigation
+menu_settings:
+  menu_items:
+    - title: 'Info'
+      url: '/about'
+  menu_items2:
+    - title: 'Index'
+      url: '/'
