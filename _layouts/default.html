@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: " en-US" }}">
+
+	<head>
+		<meta content="text/html; charset=UTF-8" name="Content-Type" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width" />
+
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="pragma" content="no-cache" />
+		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+
+		<title>{% if page.url == "/" %}{{ site.data.settings.basic_settings.site_title }} – {{ page.title }}{% else %}{{
+			page.title }} – {{ site.data.settings.basic_settings.site_title }}{% endif %}</title>
+
+		<meta property="og:site_name" content="Michael Levy">
+		<meta property="og:locale" content="en_US">
+		<meta property="og:title" content="Michael Levy">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://levy-www.org//about/">
+		<link rel="canonical" href="https://levy-www.org//about/">
+
+		<meta name="description" content="{{ page.description }}">
+		<meta property="og:description" content="{{ page.description }}">
+
+		<meta property="og:image" content="/assets/logo.png">
+
+		<link rel="stylesheet" href="{{ "assets/css/style.css" | relative_url }}">
+		<link rel="stylesheet" href="https://use.typekit.net/vii6hfe.css">
+
+		<link rel="alternate" type="application/rss+xml" title="Michael Levy RSS feed"
+			href="https://levy-www.org//feed.xml" />
+	</head>
+
+	<body>
+		<div class="homepage">
+			<main>{% include header.html %}
+				{{content}}
+			</main>
+		</div>
+		{% include footer.html %}
+	</body>
+
+</html>
