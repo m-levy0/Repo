@@ -1,0 +1,40 @@
+site: Michael Levy
+
+url: https://levy-www.com
+baseurl:
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:slug
+    type: "post"
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+paginate: 100
+paginate_path: "/page:num/"
+
