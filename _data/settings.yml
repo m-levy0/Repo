@@ -6,7 +6,7 @@ basic_settings:
 menu_settings:
   menu_items:
     - title: 'Info'
-      url: '/about'
+      url: '/info'
   menu_items2:
     - title: 'Index'
       url: '/'
