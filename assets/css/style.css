@@ -158,7 +158,7 @@ hr {
 }
 
 .post-item {
-  display: inline-flex;
+  display: flex;
   position: relative;
   margin-right: 10px;
 }
