@@ -10,13 +10,14 @@ body {
 	font-weight: 400;
 	font-style: normal;
 	color: #101010;
-	max-width: 88%;
+	max-width: 100%;
 	padding: 26px 28px;
+	margin: 0px;
 	background: #ffffff;
 }
 
 .site-header {
-	padding-bottom: 20px;
+	/* padding-bottom: 20px; */
 }
 
 .site-header .site-nav {
