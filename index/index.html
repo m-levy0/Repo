@@ -21,7 +21,7 @@ description: ""
 <div class="post-list">
 	{% for post in site.posts %}
 	<div class="post-item">
-		<a class="post-link" href="{{ post.external_url }}" target="_blank" data-date="{{ post.date | date: "%m%d%y" }}">
+		<a class="post-link" href="{{ post.external_url }}" target="_blank" data="" data-date="{{ post.date | date: "%m%d%y" }}">
 			<span class="post-title category-{{ post.tag }}-post">{{ post.title }}</span>
 			{% if post.image %}
 			<div class="post-image">
