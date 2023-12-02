@@ -164,10 +164,6 @@ a.post-link:hover::after {
 		content: attr(data);
 	}
 
-}
-
-/* mobile rules */
-@media screen and (max-width: 640px) {
 	.post-title:hover+.post-image {
 		display: none;
 	}
@@ -291,5 +287,5 @@ a.post-link:hover::after {
 
 /* makes the text bold */
 .make-bold {
-	/*font-weight: 700;*/
+	/* font-weight: 700; */
 }
