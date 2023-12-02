@@ -226,7 +226,7 @@ hr {
 
 .post-title {
 
-  text-transform: uppercase;
+  text-transform: capitalize;
   -webkit-font-smoothing: antialiased;
   -text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
