@@ -23,7 +23,6 @@ description: ""
 	{% for post in site.posts %}
 	<div class="post-item">
 		<a class="post-link" href="{{ post.external_url }}" target="_blank">
-			<sup class="post-date">{{ post.date | date: "%m-%d-%y" }}</sup>
 			<span class="post-title category-{{ post.tag }}-post">{{ post.title }}</span>
 			{% if post.image %}
 			<div class="post-image">
