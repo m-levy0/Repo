@@ -158,6 +158,14 @@ a.post-link:hover::after {
 	white-space: pre;
 }
 
+/* hide for mobile rules */
+@media screen and (max-width: 768px) {
+	a.post-link:hover::after {
+		content: "";
+	}
+
+}
+
 /* mobile rules */
 @media screen and (max-width: 640px) {
 	.post-title:hover+.post-image {
