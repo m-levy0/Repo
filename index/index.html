@@ -3,7 +3,6 @@ title: "Index"
 layout: default
 description: ""
 ---
-
 <div class="category-nav-container">
 	<div>
 		<a onclick="showCategoryImage()" class="category-link category-image-link category-image" href="#image">Image
@@ -22,7 +21,7 @@ description: ""
 <div class="post-list">
 	{% for post in site.posts %}
 	<div class="post-item">
-		<a class="post-link" href="{{ post.external_url }}" target="_blank">
+		<a class="post-link" href="{{ post.external_url }}" target="_blank" data-date="{{ post.date | date: "%y-%m-%d" }}">
 			<span class="post-title category-{{ post.tag }}-post">{{ post.title }}</span>
 			{% if post.image %}
 			<div class="post-image">
