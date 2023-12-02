@@ -161,7 +161,7 @@ a.post-link:hover::after {
 /* hide for mobile rules */
 @media screen and (max-width: 768px) {
 	a.post-link:hover::after {
-		content: "";
+		content: attr(data);
 	}
 
 }
