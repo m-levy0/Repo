@@ -291,5 +291,5 @@ a.post-link:hover::after {
 
 /* makes the text bold */
 .make-bold {
-	font-weight: 700;
+	/*font-weight: 700;*/
 }
