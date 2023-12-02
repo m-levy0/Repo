@@ -159,7 +159,7 @@ a.post-link:hover::after {
 }
 
 /* hide for mobile rules */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	a.post-link:hover::after {
 		content: attr(data);
 	}
