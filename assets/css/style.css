@@ -275,13 +275,13 @@ a.post-link:hover::after {
 
 }
 
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 400px) {
 	.post-title {
 		font-size: 10px;
 	}
-}
+} */
 
 /* makes the text bold */
 .make-bold {
-	/* font-weight: 700; */
+	font-weight: 700;
 }
