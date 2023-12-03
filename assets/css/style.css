@@ -6,6 +6,8 @@
 
 	.post-title:hover+.post-image {
 		display: none;
+		visibility: hidden;
+    	opacity: 0;
 	}
 }
 
