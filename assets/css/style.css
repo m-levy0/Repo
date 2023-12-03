@@ -11,6 +11,12 @@
 	}
 }
 
+@media only screen and (max-width: 640px) {
+                .post-title {
+                    font-size:19px;
+                    line-height: 23px;
+                }
+}
 body {
 	font-family: "neue-haas-grotesk-text";
 	-webkit-font-smoothing: antialiased;
