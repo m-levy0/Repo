@@ -296,7 +296,7 @@ a.post-link:hover::after {
 	}
 }
 
-@media only screen and (max-width: 640px) {
+@media screen and (max-width: 640px) {
                 .post-title {
                     font-size:19px;
                     line-height: 23px;
