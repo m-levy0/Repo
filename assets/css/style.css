@@ -1,3 +1,14 @@
+/* hide for mobile rules */
+@media screen and (max-width: 640px) {
+	a.post-link:hover::after {
+		content: attr(data);
+	}
+
+	.post-title:hover+.post-image {
+		display: none;
+	}
+}
+
 body {
 	font-family: "neue-haas-grotesk-text";
 	-webkit-font-smoothing: antialiased;
@@ -148,6 +159,10 @@ hr {
 	z-index: 3;
 	min-width: 400px;
 	height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 a.post-link:hover::after {
@@ -156,17 +171,6 @@ a.post-link:hover::after {
 	right: -10px;
 	position: absolute;
 	white-space: pre;
-}
-
-/* hide for mobile rules */
-@media screen and (max-width: 767px) {
-	a.post-link:hover::after {
-		content: attr(data);
-	}
-
-	.post-title:hover+.post-image {
-		display: none;
-	}
 }
 
 .post-item {
