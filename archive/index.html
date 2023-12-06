@@ -1,0 +1,34 @@
+---
+title: "Index"
+layout: default
+description: ""
+---
+<div class="category-nav-container">
+	<div>
+		<a onclick="showCategoryImage()" class="category-link category-image-link category-image" href="#image">Image
+		</a>
+	</div>
+	<div>
+		<a onclick="showCategoryText()" class="category-link category-text-link category-text" href="#text">Text
+		</a>
+	</div>
+	<div>
+		<a onclick="showCategoryHyperlink()" class="category-link category-hyperlink-link category-hyperlink" href="#hyperlink">Hyperlink
+		</a>
+	</div>
+</div>
+
+<div class="post-list">
+	{% for post in site.posts %}
+	<div class="post-item">
+		<a class="post-link" href="{{ post.external_url }}" target="_blank" data="" data-date="{{ post.date | date: "%m%d%y" }}">
+			<span class="post-title category-{{ post.tag }}-post">{{ post.title }}</span>
+			{% if post.image %}
+			<div class="post-image">
+				<img alt="image" src="{{ post.image }}">
+			</div>
+			{% endif %}
+		</a>
+	</div>
+	{% endfor %}
+</div>
