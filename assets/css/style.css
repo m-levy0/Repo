@@ -1,15 +1,15 @@
 body {
-	font-family: "neue-haas-grotesk-text";
+	font-family: "neue-haas-grotesk-text", Helvetica, Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-text-rendering: optimizeLegibility;
 	-moz-osx-font-smoothing: grayscale;
 	letter-spacing: var(--letter-spacing);
 	line-height: 30px;
-	font-size: 25px;
-	letter-spacing: 0.7px;
+	font-size: 20px;
+	letter-spacing: 0.65px;
 	font-weight: 400;
 	font-style: normal;
-	color: #101010;
+	color: #000000;
 	max-width: 100%;
 	padding: 26px 28px;
 	margin: 0px;
@@ -26,7 +26,7 @@ body {
 
 .site-nav a {
 	text-decoration: none;
-	color: #030303;
+	color: #000000;
 	transition: border-bottom 0.02s;
 	-webkit-transition: border-bottom 0.02s;
 	-moz-transition: border-bottom 0.02s;
@@ -34,7 +34,7 @@ body {
 }
 
 .site-nav a:hover {
-	border-bottom: 2px solid #030303;
+	border-bottom: 2px solid #000000;
 }
 
 img {
